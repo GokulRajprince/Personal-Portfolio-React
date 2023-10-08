@@ -28,10 +28,11 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Gokul Raj M</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            "I'm a software developer with work experience in Mobile
+            application. I have specialized in React Native, JavaScript, Node JS
+            , MongoDB, Express JS and Figma design",
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,9 +40,15 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/GokulRajprince">
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/gokul-raj-m-97008b228/">
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://instagram.com/me_gokulraj?igshid=YTQwZjQ0Nml0OA==">
+            <img src={Instagram} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}
@@ -64,7 +71,11 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv
+            img={crown}
+            text1="Mobile Application"
+            text2="Developer"
+          />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +86,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Full Stack" text2="ADeveloper" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
